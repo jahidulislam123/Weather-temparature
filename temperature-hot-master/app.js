@@ -21,5 +21,6 @@ const displayTemparature =(temparature)=>{
     const url =`http://openweathermap.org/img/wn/${temparature.weather[0].icon}@2x.png`;
     const imageIcon=document.getElementById('weather-icon');
     imageIcon.setAttribute('src',url);
+    
 
 }

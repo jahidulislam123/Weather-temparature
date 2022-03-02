@@ -17,6 +17,9 @@ const displayTemparature =(temparature)=>{
     setInnerText('temparature',temparature.main.temp);
     setInnerText('condition',temparature.weather[0].main);
     console.log(temparature);
-
+    //set weather icon
+    const url =`http://openweathermap.org/img/wn/${temparature.weather[0].icon}@2x.png`;
+    const imageIcon=document.getElementById('weather-icon');
+    imageIcon.setAttribute('src',url);
 
 }
